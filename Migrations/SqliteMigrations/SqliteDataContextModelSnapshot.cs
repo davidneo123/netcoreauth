@@ -28,6 +28,9 @@ namespace WebApi.Migrations.SqliteMigrations
                     b.Property<string>("LastName")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Role")
+                        .HasColumnType("TEXT");
+
                     b.Property<byte[]>("PasswordHash")
                         .HasColumnType("BLOB");
 

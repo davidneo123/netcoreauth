@@ -33,6 +33,9 @@ namespace WebApi.Migrations.SqlServerMigrations
 
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
+                    
+                    b.Property<string>("Role")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("PasswordHash")
                         .HasColumnType("varbinary(max)");
